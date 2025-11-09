@@ -16,30 +16,12 @@
         <header class="text-center p-10 bg-black text-white font-sans">
 
            <div class="bg-black py-20"> 
-            <h1 class="text-6xl md:text-7xl lg:text-8xl font-extrabold text-center tracking-tight 
-               bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 
-               text-transparent bg-clip-text animate-gradient-xy">
-                    ¡Marcela!
-            </h1>
+                <h1 class="text-6xl md:text-7xl lg:text-8xl font-extrabold text-center tracking-tight bg-linear-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text animate-gradient-xy">
+                        Marcela
+                </h1>
             </div>
 
-        <style>
-            /* Define la animación para el degradado */
-            @keyframes gradient-xy {
-                0%, 100% {
-                    background-position: 0% 50%; /* Posición inicial */
-                }
-                50% {
-                    background-position: 100% 50%; /* Posición media */
-                }
-            }
 
-            /* Aplica la animación al texto del título */
-            .animate-gradient-xy {
-                background-size: 200% 200%; /* Duplica el tamaño del degradado para que se mueva */
-                animation: gradient-xy 6s ease infinite; /* Duración, tipo de animación y repetición */
-            }
-        </style>
 
             <div class="w-48 h-48 mx-auto mb-6 rounded-full flex items-center justify-center text-white italic border-4 border-white shadow-lg">
                 <img src="./img/masc01.webp" alt="Foto de Marcela" class="w-full h-full object-cover rounded-full">
@@ -56,7 +38,7 @@
 
     <!-- inicio cuenta regresiva ----------------------------------------------------------------------------------->
 
-    <section id="countdown-section" class="bg-black text-white p-8 flex flex-col items-center justify-center">
+    <section id="countdown-section" class="bg-black text-white p-1 flex flex-col items-center justify-center">
     <h2 class="text-3xl sm:text-4xl font-bold mb-8">
         ¡Faltan solo!
     </h2>
@@ -301,5 +283,26 @@
 
 
 
+
+
 </body>
+
+        <style>
+            /* Define la animación para el degradado */
+            @keyframes gradient-xy {
+                0%, 100% {
+                    background-position: 0% 50%; /* Posición inicial */
+                }
+                50% {
+                    background-position: 100% 50%; /* Posición media */
+                }
+            }
+
+            /* Aplica la animación al texto del título */
+            .animate-gradient-xy {
+                background-size: 200% 200%; /* Duplica el tamaño del degradado para que se mueva */
+                animation: gradient-xy 6s ease infinite; /* Duración, tipo de animación y repetición */
+            }
+        </style>
+
 </html>
