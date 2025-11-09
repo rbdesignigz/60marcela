@@ -5,31 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
     <script src="./src/script.js" defer></script>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=music_note" />
 
-    <title>Marcela</title>
+    <title>Cumpleaños Marcela</title>
 </head>
 <body>
         <header class="text-center p-10 bg-black text-white font-sans">
-            <h1 class="text-4xl sm:text-5xl font-extrabold mb-6">
-                Marcela
+
+           <div class="bg-black py-20"> 
+            <h1 class="text-6xl md:text-7xl lg:text-8xl font-extrabold text-center tracking-tight 
+               bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 
+               text-transparent bg-clip-text animate-gradient-xy">
+                    ¡Marcela!
             </h1>
+            </div>
+
+        <style>
+            /* Define la animación para el degradado */
+            @keyframes gradient-xy {
+                0%, 100% {
+                    background-position: 0% 50%; /* Posición inicial */
+                }
+                50% {
+                    background-position: 100% 50%; /* Posición media */
+                }
+            }
+
+            /* Aplica la animación al texto del título */
+            .animate-gradient-xy {
+                background-size: 200% 200%; /* Duplica el tamaño del degradado para que se mueva */
+                animation: gradient-xy 6s ease infinite; /* Duración, tipo de animación y repetición */
+            }
+        </style>
 
             <div class="w-48 h-48 mx-auto mb-6 rounded-full flex items-center justify-center text-white italic border-4 border-white shadow-lg">
                 <img src="./img/masc01.webp" alt="Foto de Marcela" class="w-full h-full object-cover rounded-full">
             </div>
 
-            <p class="text-lg text-gray-700 leading-relaxed max-w-xl mx-auto">
+            <p class="text-xl text-gray-700 leading-relaxed max-w-xl mx-auto">
                 <strong class="font-semibold text-slate-50">Te espero para compartir la alegría de esa noche que será para mi mágica, inolvidable y única.</strong>
             </p>
         </header>
 
     <!-- fin sección header ----------------------------------------------------------------------------------->
 
+
+
     <!-- inicio cuenta regresiva ----------------------------------------------------------------------------------->
 
-    <section id="countdown-section" class="bg-black text-white p-16 flex flex-col items-center justify-center">
+    <section id="countdown-section" class="bg-black text-white p-8 flex flex-col items-center justify-center">
     <h2 class="text-3xl sm:text-4xl font-bold mb-8">
         ¡Faltan solo!
     </h2>
@@ -37,28 +64,28 @@
     <div id="countdown-timer" class="flex justify-center flex-wrap space-x-4 sm:space-x-8 text-center">
         
         <div class="flex flex-col mb-4">
-            <span id="days" class="text-5xl sm:text-7xl font-mono font-extrabold text-pink-400">00</span>
+            <span id="days" class="text-4xl sm:text-4xl font-mono font-extrabold text-pink-400">00</span>
             <span class="text-xs sm:text-sm mt-2 uppercase tracking-widest text-gray-400">Días</span>
         </div>
         
-        <span class="text-5xl sm:text-7xl font-extrabold text-pink-400 hidden sm:block">:</span>
+        <span class="text-4xl sm:text-4xl font-extrabold text-pink-400 sm:block">:</span>
         
         <div class="flex flex-col mb-4">
-            <span id="hours" class="text-5xl sm:text-7xl font-mono font-extrabold text-pink-400">00</span>
+            <span id="hours" class="text-4xl sm:text-4xl font-mono font-extrabold text-pink-400">00</span>
             <span class="text-xs sm:text-sm mt-2 uppercase tracking-widest text-gray-400">Horas</span>
         </div>
         
-        <span class="text-5xl sm:text-7xl font-extrabold text-pink-400">:</span>
+        <span class="text-4xl sm:text-4xl font-extrabold text-pink-400">:</span>
         
         <div class="flex flex-col mb-4">
-            <span id="minutes" class="text-5xl sm:text-7xl font-mono font-extrabold text-pink-400">00</span>
+            <span id="minutes" class="text-4xl sm:text-4xl font-mono font-extrabold text-pink-400">00</span>
             <span class="text-xs sm:text-sm mt-2 uppercase tracking-widest text-gray-400">Minutos</span>
         </div>
         
-        <span class="text-5xl sm:text-7xl font-extrabold text-pink-400">:</span>
+        <span class="text-4xl sm:text-4xl font-extrabold text-pink-400">:</span>
         
         <div class="flex flex-col mb-4">
-            <span id="seconds" class="text-5xl sm:text-7xl font-mono font-extrabold text-pink-400">00</span>
+            <span id="seconds" class="text-4xl sm:text-4xl font-mono font-extrabold text-pink-400">00</span>
             <span class="text-xs sm:text-sm mt-2 uppercase tracking-widest text-gray-400">Segundos</span>
         </div>
     </div>
